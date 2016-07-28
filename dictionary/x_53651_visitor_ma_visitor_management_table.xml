@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Visitor management Table" max_length="40" name="x_53651_visitor_ma_visitor_management_table" type="collection">
+        <element display="true" label="Attendee" max_length="32" name="attendee" reference="sys_user" type="reference"/>
+        <element label="Visitor Name" max_length="40" name="visitor_name" type="string"/>
+        <element label="Visit time" max_length="40" name="visit_time" type="glide_date_time"/>
+        <index name="index">
+            <element name="attendee"/>
+        </index>
+    </element>
+</database>
